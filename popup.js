@@ -29,6 +29,11 @@ document.getElementById('q').addEventListener('click', function () {
     window.open('q.html', '_blank');
 });
 
+document.getElementById('git').addEventListener('click', function () {
+    window.open('https://github.com/SetGames/EntryFlash', '_blank');
+});
+
+
 
   function hideModal() {
       modal.classList.add('hide');
@@ -59,7 +64,7 @@ document.getElementById('q').addEventListener('click', function () {
           };
 
       } else {
-          showModal('안전을 위해 엔트리 사이트에 접속해야 사용할수 있어.', false);
+          showModal('엔트리에 접속한 상태에서만 사용할수 있어요.', false);
 
           confirmYes.onclick = () => {
               hideModal();
