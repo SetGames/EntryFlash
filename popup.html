@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엔트리 메모리 클리너</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="card">
+        <div id="title">
+            <img src="img/entryLogo.svg" width="60%" style="margin: 0 auto;">
+            <hr width="50%">
+            <h1 class="hh">엔트리 메모리 클리너</h1>
+            <p class="inr">엔트리 작품 만들기가 작동하지 않을 경우,<br>사용하는 프로그램입니다.</p>
+            <button id="clear">실행</button>
+        </div>
+    </div>
+
+    <div class="card" style="display: flex; justify-content: space-between; align-items: center;">
+        <img title="제작자 페이지로" src="img/powerdev.svg" id="powerdev" style="width: 40%;">   
+        <img title="도움말" src="img/q.svg" id="q" style="width: 9%;">
+    </div>
+
+    <div class="Endcard" style="display: flex; justify-content: space-between; align-items: center;">
+        <div>확프 버전 1.2</div>
+        <img title="깃허브" src="img/Octicons-mark-github.svg" id="git" style="width: 9%;">
+    </div>
+    
+    <div style="text-align: center;">엔트리 공식 확장 프로그램이 아닙니다.</div>
+   
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <p id="modalMessage">정말 캐시를 삭제하시겠습니까?</p>
+            <button id="confirmYes">확인</button>
+            <button id="confirmNo">취소</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
